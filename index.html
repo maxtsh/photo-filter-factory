@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Author Meta -->
+    <meta name="description" content="Online Free Photo Filter Factory">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,Photo,Photo Eidt,Photo Factory">
+    <meta name="author" content="Mohammad Tsh">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Image Filters</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <img src="images/logo_english.png" alt="logo" class="logo">
+                <ul class="main-nav">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="info">
+            <div class="row">
+                <div class="col span-2-of-2">
+                    <h1>Photo Filter Factory</h1>
+                    <br>
+                    <p>Add modern filters to your photos and grab them for free!</p>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn btn-full">Documentation</button>
+                <button class="btn btn-ghost">Let's Start!</button> 
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col span-2-of-2">
+                <input type="file" class="file" id="file">
+                <label class="upload-file" for="file">Upload Image</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-3-of-12">
+                <h3 class="heading">Tools</h3>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn-2" id="normal">Normal</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn-2" id="multiply">Multiply</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn-2" id="screen">Screen</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn-2" id="overlay">Overlay</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn-2" id="darken">Darken</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn-2" id="lighten">Lighten</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn-2" id="colordodge">Color Dodge</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn-2" id="saturation1">Saturation</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn-2" id="color">Color</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn-2" id="luminosity">luminosity</button>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="blur-add">+</button>
+                        <button class="filter-text-btn" disabled>Blur</button>
+                        <button class="filter-btn" id="blur-reduce">-</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="brightness-add">+</button>
+                        <button class="filter-text-btn" disabled>Brightness</button>
+                        <button class="filter-btn" id="brightness-reduce">-</button>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="contrast-add">+</button>
+                        <button class="filter-text-btn" disabled>Contrast</button>
+                        <button class="filter-btn" id="contrast-reduce">-</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="saturation-add">+</button>
+                        <button class="filter-text-btn" disabled>Saturation</button>
+                        <button class="filter-btn" id="saturation-reduce">-</button>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="expo-add">+</button>
+                        <button class="filter-text-btn" disabled>Exposure</button>
+                        <button class="filter-btn" id="expo-reduce">-</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="gamma-add">+</button>
+                        <button class="filter-text-btn" disabled>Gamma</button>
+                        <button class="filter-btn" id="gamma-reduce">-</button>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="invert-add">+</button>
+                        <button class="filter-text-btn" disabled>Invert</button>
+                        <button class="filter-btn" id="invert-reduce">-</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="sepia-add">+</button>
+                        <button class="filter-text-btn" disabled>Sepia</button>
+                        <button class="filter-btn" id="sepia-reduce">-</button>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="hue-add">+</button>
+                        <button class="filter-text-btn" disabled>Hue</button>
+                        <button class="filter-btn" id="hue-reduce">-</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="vibrance-add">+</button>
+                        <button class="filter-text-btn" disabled>Vibrance</button>
+                        <button class="filter-btn" id="vibrance-reduce">-</button>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="noise-add">+</button>
+                        <button class="filter-text-btn" disabled>Noise</button>
+                        <!-- <button class="filter-btn" id="noise-reduce">-</button> -->
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn" id="grayscale-add">+</button>
+                        <button class="filter-text-btn" disabled>GreyScale</button>
+                        <!-- <button class="filter-btn" id="grayscale-reduce">-</button> -->
+                    </div>
+                </div>
+                <br>
+                <br><br>
+            </div>
+            <div class="col span-9-of-12 error-parent">
+                <div class="row">
+                    <h3 class="heading">Photo</h3>
+                    <div class="img-container">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="vintage">Vintage</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="lomo">Lomo</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="clarity">Clarity</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="sincity">Sin City</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="love">Love</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="crossprocess">Cross Process</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="pinhole">Pinhole</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="nostalgia">Nostalgia</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="hermajesty">Her Majesty</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="hazydays">Hazy Days</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="concentrate">Concentrate</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="hemingway">Hemingway</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="grungy">Grungy</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="sunrise">Sunrise</button>
+                    </div>
+                    <div class="col span-2-of-10">
+                        <button class="effect" id="oldboot">Old Boot</button>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn download" id="download">Download Image</button>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <button class="filter-btn reset" id="reset">Clear All Filters</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col span-4-of-12">
+                <img src="images/logo_english.png" alt="Logo" class="logo">
+            </div>
+            <div class="col span-4-of-12">
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/mohammad.ghostx" id="fa">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/mohammad_tat_/" id="in">Instagram</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCbsN-kSxQsVLcS2Nr1R0meA" id="yo">Youtube</a></li>
+                    <li><a href="https://twitter.com/Mohammad_tsh" id="tw">Twitter</a></li>
+                    <li><a href="https://github.com/mohammadtsh" id="git">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="col span-4-of-12">
+                <h1>Photo Filter Factory</h1>
+                <p>Author: Mohammad Tsh</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
